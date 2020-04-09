@@ -477,7 +477,7 @@ button {
     width: 79.16vw;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 1.18vw;
+    margin-bottom: 1.18vw;
   }
 
   .menu-list, .personal-list {
@@ -634,7 +634,7 @@ button {
     width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 17px;
+    margin-bottom: 17px;
   }
 
   .menu-list, .personal-list {
