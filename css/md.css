@@ -1,0 +1,773 @@
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  color: #161106;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+button {
+  outline-style: none;
+}
+
+@font-face {
+  font-family: OpenSans_R;
+  src: url("https://github.com/VictoriaKl91/MolokoDom/blob/master/fonts/OpenSans-Regular.woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OpenSans_B;
+  src: url("https://github.com/VictoriaKl91/MolokoDom/blob/master/fonts/OpenSans-Bold.woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.container, .container-footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: block;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+    
+.logo {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+
+.search_visually_hid {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  height: 1px;
+  width: 1px;
+}
+
+.one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two {
+  display: flex;
+}
+
+.katalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.katalog_name {
+  font-family: OpenSans_B, arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #161106;
+}
+
+.footer {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  position: relative;
+  background-color: #d1d2d4;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+} 
+
+.container-footer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.head_two {
+  font-family: OpenSans_B, arial, sans-serif;
+  color: #161106;
+}
+ 
+.list-footer, .card__contact_tel, .card__contact_mail {
+  padding-inline-start: 0;
+  font-family: OpenSans_R, arial, sans-serif;
+  color: #161106;
+}
+
+.social {
+  display: flex;
+}
+
+.soc-item {
+  display: inline-block;
+}
+
+.soc_inst, .soc_vk, .soc_fb {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3.82vw;
+}
+
+.soc_inst {
+  background-image: url("https://raw.githubusercontent.com/VictoriaKl91/MolokoDom/master/image/Inst.png");
+}
+
+.soc_vk {
+  background-image: url("https://raw.githubusercontent.com/VictoriaKl91/MolokoDom/master/image/VK.png");
+}
+
+.soc_fb {
+  background-image: url("https://raw.githubusercontent.com/VictoriaKl91/MolokoDom/master/image/FB.png");
+}
+
+.soc-txt {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.card__contact_tel, .card__contact_mail {
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .header {
+    background-image: url("https://raw.githubusercontent.com/VictoriaKl91/MolokoDom/master/image/Head_mobile.jpg");
+    background-color: #c4c4c4;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 6.25vw;
+    margin-left: 6.25vw;
+    padding-bottom: 13.44vw;
+    padding-top: 8.125vw;
+  }
+
+  .menu-list, .personal-list {
+    display: none;
+  }
+
+  .logo-img {
+    width: 54.375vw;
+  }
+  
+  .logo_txt {
+    margin-top: 6.25vw;
+    font-family: OpenSans_R, arial, sans-serif;
+    font-size: 6.25vw;
+    font-weight: normal;
+    text-align: center;
+    color: #161106;
+  }
+  
+  .logo_txt_two {
+    margin-left: 14.69vw;
+    margin-right: 14.69vw;
+  }
+  
+  .form_search {
+    display: none;
+  }
+
+  .button-menu {
+    position: relative;
+    margin-left: 14.69vw;
+    margin-right: 14.69vw;
+    box-sizing: border-box;
+    width: 79.375vw;
+    padding-top: 6.25vw;
+    padding-bottom: 6.25vw;
+    border: 1px solid #605641;
+    border-radius: 8px;
+    font-family: OpenSans_B, arial, sans-serif;
+    font-size: 6.25vw;
+    background-color: #aeadad;
+    opacity: 0.9;
+    z-index: 2;
+  }
+  
+  .button-menu:hover {
+    background-color: #b4a993;
+  }
+  
+  .button-menu:nth-child(1) {
+    margin-top: 6.25vw;
+  }
+  
+  .button-menu:nth-child(n+2) {
+    margin-top: 7.81vw;
+  }
+
+  .page {
+    background-color: #dbdbdb;
+  }
+  
+  .part_one {
+    display: none;
+  }
+  
+  .search_mobile {
+    padding-top: 4vw;
+    padding-bottom: 7.812vw;
+  }
+  
+  .search_form {
+    display: flex;
+    box-sizing: border-box;
+    padding: 3.125vw 6.25vw;
+    border: 1px solid #605641;
+    border-radius: 8px;
+    background-color: #aeadad;
+  }
+
+  .search_visually_hid {
+    position: absolute;
+    clip: rect(1px 1px 1px 1px);
+    height: 1px;
+    width: 1px;
+  }
+
+  .search_text_mob {
+    height: 12.19vw;
+    width: 71.875vw;
+    box-sizing: border-box;
+    padding-left: 0.625vw;
+    padding-right: 0.625vw;
+    border: 0;
+    border-radius: 5px;
+    font-family: OpenSans_R, arial, sans-serif;
+    font-size: 6.25vw;
+    line-height: 12.5vw;
+  }
+
+  .button-search_mob {
+    height: 12.19vw;
+    width: 12.19vw;
+    margin-left: 3.44vw;
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid #605641;
+    border-radius: 5px;
+    background-color: #c3b9a4;
+    cursor: pointer;
+  }
+
+  .seac_img {
+    width: 7.81vw;
+  }
+
+  .search_text_mob:focus, .button-search_mob:focus {
+    outline: none;
+  }
+
+  .button-search_mob:hover {
+    background-color: #b4a993;
+  }
+
+  .two {
+    flex-direction: column;
+    padding-left: 6.25vw;
+  }
+
+  .katalog {
+    margin-top: 2.29vw;
+    margin-bottom: 5vw;
+  }
+
+  .katalog_img {
+    width: 87.5vw;
+  }
+
+  .katalog_name {
+    margin-top: 1.04vw;
+    font-size: 7.5vw;
+  }
+
+  .container-footer {
+    flex-direction: column;
+    margin-left: 6.25vw;
+    margin-right: 6.25vw;
+  }
+
+  .block_one, .block_two {
+    display: none;
+  }
+  
+  .block_one_mob {
+    padding-top: 10.625vw;
+  }
+
+  .head_two {
+    font-size: 11.875vw;
+  }
+
+  .list-footer, .card__contact_tel, .card__contact_mail {
+    font-size: 7.5vw;
+  }
+  
+  .link, .card__contact_tel, .card__contact_mail {
+    padding-top: 6.25vw;
+  }
+  
+  .block_three {
+    display: flex;
+    flex-direction: column;
+   }
+
+  .social {
+    margin-left: 6.25vw;
+    margin-right: 6.25vw;
+    margin-bottom: 10.31vw;
+    margin-top: 11.875vw;
+    order: 2;
+  }
+
+  .soc_inst, .soc_vk, .soc_fb {
+    width: 17.5vw;
+    height: 17.5vw;
+    background-size: 16.25vw;
+  }
+
+  .soc_vk, .soc_fb {
+    margin-left: 10vw;
+  }
+}
+
+@media (min-width: 641px) {
+  .header {
+    background-image: url("https://raw.githubusercontent.com/VictoriaKl91/MolokoDom/master/image/Head.jpg");
+    background-color: #ababab;
+  }
+
+  .header::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ababab;
+    opacity: 0.45;
+  }
+  
+  .menu-list, .personal-list {
+    display: flex;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: OpenSans_B, arial, sans-serif;
+    font-weight: bold;
+    color: #2e240b;
+    padding-inline-start: 0;
+    z-index: 2;
+  }
+    
+  .logo_txt {
+    display: none;
+  }
+  
+  .menu-button {
+    display: none;
+  }
+    
+  .form_search {
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid #605641;
+    border-radius: 8px;
+    background-color: #aeadad;
+    z-index: 2;
+  }
+  
+  .search_text {
+    border-radius: 5px;
+    font-family: OpenSans_B, arial, sans-serif;
+    outline-style: none;
+  }
+
+  .button-search, .button_zakaz {
+    border: 1px solid #605641;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: OpenSans_B, arial, sans-serif;
+    color: #161106;
+    background-color: #c3b9a4;
+    cursor: pointer;
+  }
+
+  .button-search:hover, .button_zakaz:hover {
+    background-color: #b4a993;
+  }
+
+  .search_mobile {
+    display: none;
+  }
+  
+  .part_one {
+    display: flex;
+    justify-content: space-between;
+    background-color: #dbdbdb;
+  }
+
+  .message {
+    flex-direction: column;
+  }
+
+  .txt {
+    padding-inline-start: 0;
+    font-family: OpenSans_R, arial, sans-serif;
+    color: #161106;
+  }
+    
+  .part_two {
+    background-color: #f5f5f7;
+  }
+  
+  .block_one_mob {
+    display: none;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1440px) {
+  .header {
+    padding-top: 4.23vw;
+  }
+  
+  .container {
+    padding-bottom: 1.18vw;
+  }
+
+  .menu {
+    width: 79.16vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1.18vw;
+  }
+
+  .menu-list, .personal-list {
+    font-size: 1.67vw;
+  }
+
+  .personal-list {
+    margin-left: 70.5vw;
+  }
+
+  .personal-link_two {
+    margin-left: 7.29vw;
+  }
+
+  .menu-link_two, .menu-link_four {
+    margin-left: 6.46vw;
+  }
+
+  .menu-link_three {
+    margin-left: 39.3vw;
+  }
+
+  .logo-img {
+    width: 11.46vw;
+  }
+
+  .form_search {
+    width: 79.375vw;
+    margin-left: 10.42vw;
+    margin-right: 10.42vw;
+    padding: 0.83vw;
+  }
+
+  .search_text {
+    width: 69.03vw;
+    font-size: 1.67vw;
+    padding-left: 0.14vw;
+    padding-right: 0.14vw;
+  }
+
+  .button-search {
+    width: 7.71vw;
+    padding-top: 0.35vw;
+    padding-bottom: 0.21vw;
+    font-size: 1.39vw;
+  }
+  
+  .part_one {
+    padding-left: 10.42vw;
+    padding-right: 10.42vw;
+    padding-top: 2.01vw;
+    padding-bottom: 1.94vw;
+  }
+  
+  .one {
+    width: 79.16vw;
+  }
+
+  .message {
+    width: 27.01vw;
+    margin-top: 11.88vw;
+  }
+
+  .txt {
+    font-size: 1.67vw;
+  }
+
+  .button_zakaz {
+    width: 18.4vw;
+    margin-top: 2.92vw;
+    padding-top: 1.51vw;
+    padding-bottom: 1.48vw;
+    font-size: 1.67vw;
+  }
+
+  .pic {
+    width: 38.19vw;
+  }
+  
+  .part_two {
+    padding-top: 2.29vw;
+    padding-bottom: 5vw;
+    padding-left: 10.42vw;
+  }
+
+  .katalog:nth-child(n + 2) {
+    margin-left: 1.73vw;
+  }
+
+  .katalog_img {
+    width: 25.21vw;
+  }
+
+  .katalog_name {
+    margin-top: 1.04vw;
+    font-size: 1.67vw;
+  }
+
+  .container-footer {
+    margin-left: 10.42vw;
+    margin-right: 10.42vw;
+    padding-top: 1.74vw;
+    padding-bottom: 2.5vw;
+  }
+
+  .head_two {
+    padding-bottom: 1vw;
+    font-size: 2.78vw;
+  }
+
+  .list-footer, .card__contact_tel, .card__contact_mail {
+    font-size: 1.67vw;
+  }
+  
+  .link {
+    padding-top: 0.5vw;
+  }
+
+  .card__contact_tel {
+    margin-top: 3.125vw;
+  }
+
+  .card__contact_mail {
+    margin-top: 1vw;
+  }
+
+  .soc_inst, .soc_vk, .soc_fb {
+    width: 4.1vw;
+    height: 4.1vw;
+    background-size: 3.82vw;
+  }
+  
+  .soc_vk, .soc_fb {
+    margin-left: 2.29vw;
+  }
+}
+
+@media (min-width: 1441px) {
+  .header {
+    padding-top: 61px;
+  }
+  
+  .container, .container-footer {
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .container {
+    padding-bottom: 17px;
+  }
+
+  .menu {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 17px;
+  }
+
+  .menu-list, .personal-list {
+    font-size: 24px;
+  }
+
+  .personal-list {
+    margin-left: 1015px;
+  }
+
+  .personal-link_two {
+    margin-left: 105px;
+  }
+
+  .menu-link_two, .menu-link_four {
+    margin-left: 93px;
+  }
+
+  .menu-link_three {
+    margin-left: 566px;
+  }
+
+  .logo-img {
+    width: 165px;
+  }
+
+  .form_search {
+    width: 1143px;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding: 12px;
+  }
+
+  .search_text {
+    width: 994px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 24px;
+  }
+
+  .button-search {
+    width: 111px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    font-size: 20px;
+  }
+  
+  .part_one, part_two {
+    margin-right: auto;
+    margin-left: auto;    
+  }
+
+  .one, .two {
+    width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .message {
+    width: 389px;
+    margin-top: 171px;
+  }
+
+  .txt {
+    font-size: 24px;
+  }
+
+  .button_zakaz {
+    width: 265px;
+    margin-top: 42px;
+    padding-top: 22px;
+    padding-bottom: 21px;
+    font-size: 24px;
+  }
+
+  .pic {
+    width: 550px;
+  }
+  
+  .part_two {
+    padding-top: 33px;
+    padding-bottom: 72px;
+  }
+
+  .katalog:nth-child(n + 2) {
+    margin-left: 25px;
+  }
+
+  .katalog_img {
+    width: 363px;
+  }
+
+  .katalog_name {
+    margin-top: 15px;
+    font-size: 24px;
+  }
+
+  .container-footer {
+    width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    padding-bottom: 36px;
+  }
+
+  .head_two {
+    padding-bottom: 15px;
+    font-size: 40px;
+  }
+
+  .list-footer, .card__contact_tel, .card__contact_mail {
+    font-size: 24px;
+  }
+  
+  .link {
+    padding-top: 7px;
+  }
+
+  .card__contact_tel {
+    margin-top: 45px;
+  }
+
+  .card__contact_mail {
+    margin-top: 14px;
+  }
+
+  .soc_inst, .soc_vk, .soc_fb {
+    width: 59px;
+    height: 59px;
+    background-size: 55px;
+  }
+
+  .soc_vk, .soc_fb {
+    margin-left: 33px;
+  }
+}
