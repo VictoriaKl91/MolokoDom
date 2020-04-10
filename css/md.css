@@ -196,7 +196,7 @@ button {
     color: #161106;
   }
   
-  .logo_txt_two {
+  .logo_txt_one {
     margin-left: 14.69vw;
     margin-right: 14.69vw;
   }
@@ -204,11 +204,13 @@ button {
   .form_search {
     display: none;
   }
+  
+  .menu-button {
+    width: 78.75vw;
+  }
 
   .button-menu {
     position: relative;
-    margin-left: 14.69vw;
-    margin-right: 14.69vw;
     box-sizing: border-box;
     width: 79.375vw;
     padding-top: 6.25vw;
@@ -273,7 +275,6 @@ button {
     border-radius: 5px;
     font-family: OpenSans_R, arial, sans-serif;
     font-size: 6.25vw;
-    line-height: 12.5vw;
   }
 
   .button-search_mob {
@@ -299,10 +300,13 @@ button {
   .button-search_mob:hover {
     background-color: #b4a993;
   }
+  
+  .part_two {
+  padding-left: 6.25vw;
+  }
 
   .two {
     flex-direction: column;
-    padding-left: 6.25vw;
   }
 
   .katalog {
@@ -323,14 +327,11 @@ button {
     flex-direction: column;
     margin-left: 6.25vw;
     margin-right: 6.25vw;
+    padding-top: 10.625vw;
   }
 
   .block_one, .block_two {
     display: none;
-  }
-  
-  .block_one_mob {
-    padding-top: 10.625vw;
   }
 
   .head_two {
@@ -341,7 +342,7 @@ button {
     font-size: 7.5vw;
   }
   
-  .link, .card__contact_tel, .card__contact_mail {
+  .link {
     padding-top: 6.25vw;
   }
   
@@ -366,6 +367,10 @@ button {
 
   .soc_vk, .soc_fb {
     margin-left: 10vw;
+  }
+  
+ .card__contact_tel, .card__contact_mail {
+    margin-top: 6.25vw;
   }
 }
 
